@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { propTypes } from "react-bootstrap/esm/Image";
 import { Card, CardHeader, CardBody, Form, Row, Col, Input, Label, Button, FormGroup, Alert } from 'reactstrap';
 
 
@@ -80,12 +79,18 @@ export default function AddFirmware(props) {
                             </Col>
                         </Row>
 
-                        <Button
-                            color="success"
-                            outline
-                        >
-                            Update New Firmware
-                        </Button>
+                        <Row width='10%' className="m-2  justify-content-center">
+                            <Label>
+                                *All fields are mandetory
+                            </Label>
+                            <Button
+                                width='10%'
+                                color="success"
+                                outline
+                            >
+                                Update New Firmware
+                            </Button>
+                        </Row>
                     </Form>
                 </CardBody>
             </Card>

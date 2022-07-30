@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
-import http from "../http"
 import AddFirmware from "../components/addFirmware";
 import ViewFirmware from "../components/viewFirmwares";
 
 export default function Home() {
-    // const [users, setUsers] = useState([]);
     const [status, setStatus] = useState(false);
     const [visible, setVisible] = useState(false);
 
@@ -18,7 +16,7 @@ export default function Home() {
         formData.append('firmware_version', data.firmware_version);
         console.log(data);
         fetch(
-            'http://127.0.0.1:8000/api/firmware-upload',
+            'https://gramworkx.pranavkamble.in/api/firmware-upload',
             {
                 method: 'POST',
                 body: formData,
