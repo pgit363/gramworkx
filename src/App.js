@@ -8,11 +8,10 @@ function App() {
   return (
     <div>
       <div>
-        here
-        {/* <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/create' element={<Create />} />
-        </Routes> */}
+        <Routes>
+          <Route path='/gramworkx' element={<Home />} />
+          <Route path='/gramworkx/create' element={<Create />} />
+        </Routes>
       </div>
     </div>
   );
