@@ -14,9 +14,8 @@ export default function Home() {
         formData.append('firmware_file', selectedFile);
         formData.append('device_model', data.device_model);
         formData.append('firmware_version', data.firmware_version);
-        console.log(data);
         fetch(
-            'https://gramworkx.pranavkamble.in/api/firmware-upload',
+            'http://localhost:8000/api/firmware-upload',
             {
                 method: 'POST',
                 body: formData,
@@ -32,6 +31,7 @@ export default function Home() {
             })
             .catch((error) => {
                 console.error('Error:', error);
+                alert(error);
             });
     };
 

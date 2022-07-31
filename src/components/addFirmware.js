@@ -39,11 +39,12 @@ export default function AddFirmware(props) {
                             <Input
                                 type="select"
                                 name="device_model"
-                                id="device_model" required
+                                id="device_model" 
                                 value={inputs.device_model || ''}
                                 onChange={handleChanged}
+                                required
                             >
-                                <option>-- Select Device --</option>
+                                <option value="">-- Select Device --</option>
                                 <option value="gwx100">gwx100</option>
                                 <option value="gwx200">gwx200</option>
                             </Input>
@@ -73,6 +74,7 @@ export default function AddFirmware(props) {
                                         name="firmware_file"
                                         type="file"
                                         onChange={(e) => setSelectedFile(e.target.files[0])}
+                                        accept=".bin"
                                         required
                                     />
                                 </FormGroup>
