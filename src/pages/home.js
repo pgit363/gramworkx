@@ -14,8 +14,9 @@ export default function Home() {
         formData.append('firmware_file', selectedFile);
         formData.append('device_model', data.device_model);
         formData.append('firmware_version', data.firmware_version);
+        console.log(data);
         fetch(
-            'http://localhost:8000/api/firmware-upload',
+            'http://gramworkx.pranavkamble.in/api/firmware-upload',
             {
                 method: 'POST',
                 body: formData,

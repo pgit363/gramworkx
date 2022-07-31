@@ -83,7 +83,7 @@ export default function AddFirmware(props) {
 
                         <Row width='10%' className="m-2  justify-content-center">
                             <Label>
-                                *All fields are mandetory
+                                *All fields are mandatory
                             </Label>
                             <Button
                                 width='10%'
